@@ -1,5 +1,6 @@
-# Tugas 7 PBP - Rebeka Alma 2106653060 - PBP E
+# Tugas 7 dan 8 PBP - Rebeka Alma 2106653060 - PBP E
 
+## Tugas 7
 
 ## Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 Stateful Widget merupakan widget yang dinamis atau dapat berubah. Berbanding terbalik dengan stateless, stateful widget dapat mengupdate tampilan, merubah warna, menambah jumlah baris dll. Jadi dapat disimpulkan bahwa apapun widget yang dapat berubah maka itulah stateful widget.
@@ -47,3 +48,55 @@ keyword const mirip seperti final namun variabel dengan keyword const itu KONSTA
 - Panggil function decrement ketika button decrement dipencet
 - Buat conditional widget text untuk tiap counter yang sedang ditunjuk
 - Buat conditional dimana button decrement hanya bisa terlihat jika _counter > 0
+
+
+
+## Tugas 8
+
+
+## Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement
+
+
+Push menambahkan satu route/page ke top of stack Navigator, sedangkan pushReplacement menggantikan page tersebut dengan yang baru.
+
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya
+
+
+- drawer: drawer/hamburger
+- DropDown: Widget interaktif yang bisa memiliki pilihan drop-down
+- Padding: Widget styling, untuk padding sebuah widget lain
+- Card: Layout widget, untuk menata isi-isinya (child)
+
+
+dsb
+
+
+## Sebutkan jenis-jenis event yang ada pada Flutter 
+
+
+- onPressed, tombol dipencet
+- onChanged, untuk form field ketika data yang diubah
+- onSaved, ketika form di-save
+- onLongPress, ketika tombol ditahan
+
+
+## Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter
+
+
+Navigator merupakan stack dimana Top of Stack (TOS) merupakan halaman yang ditampilkan. Navigator mengganti halaman dengan mengganti top of stack (push / pushReplacement) sehingga aplikasi menampilkan halaman yang baru itu. Jika dia pop maka dia 'return' ke halaman sebelumnya (yang sudah pernah dibuka, karena ada di layer bawah stack)
+
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
+
+
+- Membuat file drawer yang berisi route untuk masing masing class untuk counter, showBudget, atau form.
+
+
+- Membuat form dengan validation dan state
+
+
+- File data akan diset untuk memiliki fungsi untuk menambahkan obj paada atribut classnya untuk menampung data yang diinput.
+
+
+- Membuat showBudget dan melakukan loop dari ListBudget.len untuk diloop dan ditampilan sebagaimananya dengan Card view
