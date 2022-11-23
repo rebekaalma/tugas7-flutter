@@ -1,5 +1,6 @@
 import 'package:counter_7/form.dart';
 import 'package:counter_7/showbudgets.dart';
+import 'package:counter_7/watchlistPage.dart';
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
 
@@ -39,6 +40,16 @@ class MyDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => const MyBudgetPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('Watchlist Page'),
+            onTap: () {
+              // Route menu ke halaman utama
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const WatchListPage()),
               );
             },
           ),
