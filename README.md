@@ -1,4 +1,4 @@
-# Tugas 7 dan 8 PBP - Rebeka Alma 2106653060 - PBP E
+# Tugas 7, 8 dan 9 PBP - Rebeka Alma 2106653060 - PBP E
 
 ## Tugas 7
 
@@ -100,3 +100,63 @@ Navigator merupakan stack dimana Top of Stack (TOS) merupakan halaman yang ditam
 
 
 - Membuat showBudget dan melakukan loop dari ListBudget.len untuk diloop dan ditampilan sebagaimananya dengan Card view
+
+
+## Tugas 9
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+
+Bisa, membuat template sebelum mengambil data JSON lebih baik karena dapat merepresentasikan data dan struktur data apa yang akan diterima ketika data JSON diambil agar sesuai dengan respon. Jika tidak membuat template, Anda perlu menyesuaikan data yang diterima dan tipe data secara manual saat kita menerima data respons.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya
+
+
+- Widget ElevatedButton adalah tombol yang dapat diberikan tulisan dengan warna latar belakang pada tombol. Digunakan sebagai tombol kembali pada halaman detail.
+
+
+- Widget flexibel yang mengontrol baris, kolom, atau widget fleksibel. Digunakan saat validasi string ditampilkan pada halaman data sehingga tidak meluap.
+
+
+- Widget RichText yang menampilkan teks dalam berbagai style. Teks yang ditampilkan menggunakan objek TextSpan.
+
+
+- Widget TextSpan yang dapat memformat teks. Dapat memiliki turunan widget untuk menentukan style turunan widget. Digunakan saat menampilkan teks pada halaman detail.
+
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter
+
+
+- Pertama dependensi HTTP. Flutter untuk melakukan permintaan HTTP seperti GET.
+
+
+- Buat template class yang cocok dengan informasi respons yang akan diambil.
+
+
+- Melakukan http GET request untuk mengambil data JSON.
+
+
+- Mengkoversikan data JSON yang diambil ke template class yang sudah dibuat.
+
+
+- Menampilkan data dengan FutureBuilder.
+
+## Implementasi
+
+
+Pada tugas ini, kita akan mengintegrasikan mywatchlist yang sudah  ada pada tugas 3 sebelumnya ke Flutter. Pengerjaan tugas ini akan menggunakan app yang sama dengan tugas Flutter sebelumnya.
+
+
+ - Pertama, menambahkan tombol navigasi pada drawer/hamburger untuk ke halaman mywatchlist.
+
+
+- Membuat satu file dart yang berisi model mywatchlist.
+
+
+- Menambahkan halaman mywatchlist yang berisi semua watch list yang ada pada endpoint JSON di Django yang telah kamu deploy ke Heroku sebelumnya (Tugas 3). Pada bagian ini, kamu cukup menampilkan judul dari setiap mywatchlist yang ada.
+
+- Membuat navigasi dari setiap judul watch list ke halaman detail Mywatchlist
+
+- Menambahkan halaman detail untuk setiap mywatchlist yang ada pada daftar tersebut. Halaman ini menampilkan judul, release date, rating, review, dan status (sudah ditonton/belum).
+
+- Menambahkan tombol untuk kembali ke daftar mywatchlist
